@@ -1,4 +1,6 @@
 <div>
+    <button type="button" wire:click="redirectt">Redirect</button>
+
     <div class="mb-6 space-y-4">
         {{-- Search Input --}}
         <input type="text" wire:model.live="search" placeholder="Search products..." class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">

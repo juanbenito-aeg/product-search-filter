@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class Form extends Component
 {
-    public string $postTitle;
+    public string $postTitle = "";
 
     public function save()
     {

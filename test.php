@@ -1,7 +1,20 @@
 <?php
 
-$a = "a";
+class ClassA {
+  const CONSTANT = "A";
 
-$arr = ["a" => "A"];
+  public function echoConstant()
+  {
+    echo static::CONSTANT;
+  } 
+}
 
-echo $arr[$a];
+class ClassB extends ClassA {
+  const CONSTANT = "B";
+}
+
+$a = new ClassA;
+$a->echoConstant();
+
+$b = new ClassB;
+$b->echoConstant();
