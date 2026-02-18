@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Form;
+use App\Livewire\ProductInfo;
 use App\Livewire\ProductSearch;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
@@ -8,3 +9,4 @@ use Livewire\Volt\Volt;
 Route::get('/', ProductSearch::class);
 Route::get('/form', Form::class);
 Volt::route('/products', 'product-list');
+Route::get("/products/{product}", ProductInfo::class);

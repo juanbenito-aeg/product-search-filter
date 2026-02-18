@@ -8,10 +8,10 @@ class Form extends Component
 {
     public string $postTitle = "";
 
+
     public function save()
     {
-        dump($this->postTitle);
-        $this->reset();
+        dump($this->pull("postTitle"));
     }
 
     public function render()
